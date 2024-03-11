@@ -4,8 +4,8 @@ public class Farmer {
 
     }
 
-    public void water(){
-
+    public boolean water(){
+        return true;
     }
     public void petFriend(){
 
