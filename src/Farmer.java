@@ -7,7 +7,7 @@ public class Farmer {
     public void water(){
 
     }
-    public void pet(){
+    public void petFriend(){
 
     }
     public void sell(String thingForSell){
