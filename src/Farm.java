@@ -1,12 +1,18 @@
 import java.util.ArrayList;
 
 public class Farm {
-    private int area;
+    private int area = 100;
     private ArrayList <Flower> garden = new ArrayList<>();
     private ArrayList <Animal> barn = new ArrayList<>();
 
     public void addFlower(Flower flower){
-       garden.add(flower);
+        for(Flower f: garden){
+            if(area - f.getNeededArea() > 0){
+                garden.add(flower);
+            }else{
+                System.out.println("jsi chudy zebrak");
+            }
+        }
     }
 
     public void addAnimal(Animal animal){
