@@ -4,6 +4,7 @@ public abstract class Flower {
     protected double price;
     protected double neededArea;
     protected double chanceOfGrowth;
+    Farmer farmer;
 
     public Flower(String name, double price, double neededArea, double chanceOfGrowth) {
         this.name = name;
@@ -12,6 +13,12 @@ public abstract class Flower {
         this.chanceOfGrowth = chanceOfGrowth;
     }
 
+    public void wasser(){
+        if(farmer.water()){
+            chanceOfGrowth += 100;
+        }
+
+    }
     @Override
     public String toString() {
         return "Flower{" +
